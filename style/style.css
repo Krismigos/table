@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border:1px solid black;
+    font-size: 30px;
+    padding: 10px 10px;
+    margin-bottom: 150px;
+}
+
+div {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: 2px solid black;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+}
+
+/*Знаходимо 1 5 7 елементи*/
+
+div:not(:nth-child(3n+1)){
+    background-color: red; 
+}
+
+/*Знаходимо 2 4 8 елементи*/
+
+div:not(:nth-child(2n)){
+    background-color: green; 
+}
+
+/*знаходимо 3 та 6 номери*/
+
+div:nth-child(3n+1){
+    background-color: blue; 
+}
+
