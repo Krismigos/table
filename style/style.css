@@ -17,6 +17,7 @@ table, th, td {
     font-size: 30px;
     padding: 10px 10px;
     margin-bottom: 150px;
+    border-collapse: collapse;
 }
 
 div {
